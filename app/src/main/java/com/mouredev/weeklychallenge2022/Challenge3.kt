@@ -28,6 +28,19 @@ fun main() {
 }
 
 private fun isPrime(number: Int): Boolean {
+    if (number < 2)
+        return false
+
+    for (div in 2 until number) {
+        if (number % div == 0)
+            return false
+    }
+
+    return true
+}
+
+/*
+private fun isPrime(number: Int): Boolean {
 
     if (number < 2) {
         return false
@@ -44,3 +57,4 @@ private fun isPrime(number: Int): Boolean {
 
 
 
+*/

@@ -11,5 +11,6 @@ class Challenge5Activity : AppCompatActivity() {
         setContentView(R.layout.activity_challenge5)
 
         Challenge5().aspectRatio("https://raw.githubusercontent.com/mouredev/mouredev/master/mouredev_github_profile.png")
+
     }
 }

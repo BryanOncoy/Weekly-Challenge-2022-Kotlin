@@ -2,6 +2,7 @@ package com.mouredev.weeklychallenge2022
 
 import android.graphics.BitmapFactory
 import java.net.URL
+import kotlin.concurrent.thread
 import kotlin.math.roundToInt
 
 /*
@@ -24,8 +25,36 @@ import kotlin.math.roundToInt
  *
  */
 
-class Challenge5() {
 
+
+
+class Challenge5() {
+/*    fun aspectRatio(url: String) {
+        Thread {
+            val link = URL(url)
+            val bitmap = BitmapFactory.decodeStream(link.openStream())
+            var height = bitmap.height
+            var width = bitmap.width
+
+            val max: Int = if (height > width) width
+            else if (height < width) height
+            else height
+
+            do {
+                var repeat = false
+                for (i in 2..max) {
+                    if (height % i == 0 && width % i == 0) {
+                        height /= i
+                        width /= i
+                        repeat = true
+                        break
+                    }
+                }
+            } while (repeat)
+
+            print(Pair(height, width))
+        }.start()
+    }*/
     fun aspectRatio(url: String) {
 
         Thread {

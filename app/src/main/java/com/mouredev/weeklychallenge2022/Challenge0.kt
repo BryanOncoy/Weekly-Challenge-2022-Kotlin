@@ -22,6 +22,20 @@ package com.mouredev.weeklychallenge2022
 fun main() {
 
     for (index in 1..100) {
+        println("${
+            if (index % 3 == 0 && index % 5 == 0) "fizzbuzz"
+            else if (index % 3 == 0) "fizz"
+            else if (index % 5 == 0) "buzz"
+            else index
+        }")
+    }
+}
+
+/*
+fun main() {
+
+    for (index in 1..100) {
+
         val divisibleByThree = index % 3 == 0
         val divisibleByFive = index % 5 == 0
         if (divisibleByThree && divisibleByFive) {
@@ -34,4 +48,4 @@ fun main() {
             println(index)
         }
     }
-}
+}*/
